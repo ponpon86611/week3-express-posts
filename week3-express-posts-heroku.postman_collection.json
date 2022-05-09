@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "2ed44631-3194-43d9-bc7e-9e406eb6c792",
+		"name": "week3-express-posts-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-cove-85129.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-cove-85129",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"今天有地震欸\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hidden-cove-85129.herokuapp.com/posts/6278c9078eba194fe2575dba",
+					"protocol": "https",
+					"host": [
+						"hidden-cove-85129",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6278c9078eba194fe2575dba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Rose\",\r\n    \"content\": \"愛捆啦\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hidden-cove-85129.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-cove-85129",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-cove-85129.herokuapp.com/posts/6278c95e8eba194fe2575dbd",
+					"protocol": "https",
+					"host": [
+						"hidden-cove-85129",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6278c95e8eba194fe2575dbd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-cove-85129.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-cove-85129",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
